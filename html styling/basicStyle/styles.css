@@ -1,0 +1,20 @@
+h1 {
+    color: blue
+}
+#firstHeading {
+    color: red
+}
+*{
+    color: green;
+}
+.smallHeading {
+    background-color: aquamarine;
+}
+h2, h3, p {
+    color: chocolate;
+}
+body {
+    background-color: bisque;
+    background-image: url('../../assets/images/backgroundImage.webp');
+    background-repeat: no-repeat;
+}

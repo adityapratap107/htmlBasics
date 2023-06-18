@@ -1,0 +1,17 @@
+body {
+    /* background-color: antiquewhite; */
+    /* background-image: url('../../assets/images/wallpaper.jpeg'); */
+    /* background-repeat: initial; */
+}
+#brandId {
+    color: red
+}
+#Apple {
+    color: rosybrown
+}
+#Samsung {
+    color: initial
+}
+#RealMe {
+    color: inherit
+}

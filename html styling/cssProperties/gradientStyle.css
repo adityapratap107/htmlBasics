@@ -1,0 +1,13 @@
+h1 {
+    /* background-image: linear-gradient(red 55%, green, blue); */
+    background-image: repeating-linear-gradient(red, blue ,green 25%);
+    height: 300px;
+    width: 300px;
+}
+
+h2 {
+    /* background-image: radial-gradient(red, green); */
+    /* background-image: repeating-radial-gradient(red, blue, yellow 25%); */
+    height: 300px;
+    width: 300px
+}
