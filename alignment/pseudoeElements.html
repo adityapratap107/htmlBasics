@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /* h3::first-letter {
+            color: red;
+            font-size: 20px;
+        } */
+        /* ::first-line {
+            color: blue
+        } */
+        /* ::selection {
+            color: yellow;
+            background-color: black;
+        } */
+        h3::before {
+            content: "Hey, ";
+        }
+        h4::after {
+            content: " Everyone??"
+        }
+    </style>
+</head>
+<body>
+    Hey, it's very pretty weather outside
+    <p>Hey, it's very pretty weather outside <br> This is second line here example</p>
+    <h3>it's very pretty weather outside</h3>
+    <!-- <h4>it's very pretty weather outside!!! Hey, it's very pretty weather outside!!! Hey, it's very pretty weather outside!!! Hey, it's very pretty weather outside!!! Hey, it's very pretty weather outside!!! Hey, it's very pretty weather outside!!! Hey, it's very pretty weather outside!!! Hey, it's very pretty weather outside!!! </h4> -->
+    <h4>What's up</h4>
+</body>
+</html>

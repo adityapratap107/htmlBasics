@@ -5,64 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        input {
+            width: '100%';
+            box-sizing: border-box;
+            border: 1px solid grey;
+            padding: 8px;
+        }
+        form {
+            background-color: aliceblue;
+        }
+        label {
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        input[type=submit], input[type=reset] {
+            background-color: bisque;
+            border-radius: 6px;
+            padding: 10px;
+            width: 10%;
+        }
+        .formContainer {
+            margin: 20px; 
+        }
+    </style>
 </head>
 <body>
     <form action="tables.html">
-        <label>
-            Name <input type="text" placeholder="Enter your name"/>
-        </label>
-        <br><br>
-        <label>
-            Email <input type="email" placeholder="Enter your email"/>
-        </label>
-        <br><br>
-        <label>
-            Password <input type="password" placeholder="Enter password"/> 
-        </label>
-        <br><br>
-        <p>Selecf any one locations</p>
-        <label for="1">
-            <input type="radio" value="chandigarh" name="city" id="1"/>Chandigarh
-        </label>
-        <label for="2">
-            <input type="radio" value="delhi" name="city" id="2"/>Delhi
-        </label>
-        <br><br>
-        <p>Please mark your preferred locations</p>
-        <label for="id1">
-            <input type="checkbox" value="chandigarh" name="city" id="id1"/>Chandigarh
-        </label><br>
-        <label for="id2">
-            <input type="checkbox" value="delhi" name="city" id="id2"/>Delhi
-        </label>
-        <br><br>
-        <textarea name="Feedback" id="textareaId" placeholder="Please give your feedback"></textarea>
-        <br>
-        Time<input type="time" name="time" value="time">
-        <br>
-        Week<input type="week" name="week" value="week"/>
-        <br>
-        Month<input type="month" name="month" value="month"/>
-        <br>
-        Date<input type="date"  max="2023-06-17" name="date" value="date"/>
-        <br>  <br>
-        Date Time<input type="datetime-local" name="date" value="date"/>
-        <br>  <br>
-        Search<input type="search" name="search" value="" placeholder="Search anything"/>
-        <br>  <br>
-        Number<input type="tel" name="tel" value="" placeholder="Enter Phone"/>
-        <br>  <br>
-        URL<input type="url" name="url" value="" placeholder="Enter URL"/>
-        <br>  <br>
-        Select <input type="file" name="file" value="" />
-        <br>  <br>
-        Select color<input type="color" name="color" color="" />
-        <br>  <br>
-        Select Image - Captcha<input type="image" name="image" color="" height="20px" width="40px" alt="unable to preview" src="https://cdn.pixabay.com/photo/2015/09/16/08/55/online-942408_960_720.jpg"/>
-        <br>  <br>
-        <input type="range" min="3" max="8"/>
-        <br><br>
-        <input type="submit" /> <input type="reset"/>
+        <div class="formContainer">
+
+            <label>
+                Name <input type="text" placeholder="Enter your name"/>
+            </label>
+            <br><br>
+            <label>
+                Email <input type="email" placeholder="Enter your email"/>
+            </label>
+            <br><br>
+            <label>
+                Password <input type="password" placeholder="Enter password"/> 
+            </label>
+            <br><br>
+            <p>Selecf any one locations</p>
+            <label for="1">
+                <input type="radio" value="chandigarh" name="city" id="1"/>Chandigarh
+            </label>
+            <label for="2">
+                <input type="radio" value="delhi" name="city" id="2"/>Delhi
+            </label>
+            <br><br>
+            <p>Please mark your preferred locations</p>
+            <label for="id1">
+                <input type="checkbox" value="chandigarh" name="city" id="id1"/>Chandigarh
+            </label><br>
+            <label for="id2">
+                <input type="checkbox" value="delhi" name="city" id="id2"/>Delhi
+            </label>
+            <br><br>
+            <textarea name="Feedback" id="textareaId" placeholder="Please give your feedback"></textarea>
+            <br>
+            Time<input type="time" name="time" value="time">
+            <br>
+            Week<input type="week" name="week" value="week"/>
+            <br>
+            Month<input type="month" name="month" value="month"/>
+            <br>
+            Date<input type="date"  max="2023-06-17" name="date" value="date"/>
+            <br>  <br>
+            Date Time<input type="datetime-local" name="date" value="date"/>
+            <br>  <br>
+            Search<input type="search" name="search" value="" placeholder="Search anything"/>
+            <br>  <br>
+            Number<input type="tel" name="tel" value="" placeholder="Enter Phone"/>
+            <br>  <br>
+            URL<input type="url" name="url" value="" placeholder="Enter URL"/>
+            <br>  <br>
+            Select <input type="file" name="file" value="" />
+            <br>  <br>
+            Select color<input type="color" name="color" color="" />
+            <br>  <br>
+            Select Image - Captcha<input type="image" name="image" color="" height="20px" width="40px" alt="unable to preview" src="https://cdn.pixabay.com/photo/2015/09/16/08/55/online-942408_960_720.jpg"/>
+            <br>  <br>
+            <input type="range" min="3" max="8"/>
+            <br><br>
+            <input type="submit" /> <input type="reset"/>
+        </div>
+
     </form>
 
     <br><br>
