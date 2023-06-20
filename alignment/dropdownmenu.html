@@ -7,41 +7,43 @@
     <title>Document</title>
     <style>
         *{
-            padding:0;
-            margin: 0;
+            /* margin:0; */
+            /* padding: 0; */
         }
-        .menu {
-            background-color: antiquewhite;
-            width: 20%;
-            padding: 14px;
-        }
-        .menu ul {
+        .divlist ul {
             list-style-type: none;
         }
-        .menu ul li {
-            border: 1px solid black;
+        .divlist ul li {
             display: none;
+            border: 1px solid black;
+            width: 25%;
+            background-color: beige;
         }
-        .menu:hover li{
-            /* background-color: red; */
+        .divlist ul li a {
+            text-decoration: none;
+            color: initial;
+        }
+        .heading {
+            height: 30px;
+            width: 30%;
+        }
+        .menu:hover li {
             display: block;
         }
-        a{
-            text-decoration: none;
-            color: inherit
-        }
-     
+        
     </style>
 </head>
 <body>
     <div class="menu">
-        Courses
-        <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> </li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
-            <li><a href="https://react.dev/">React</a></li>
-        </ul>
+        <h1 class="heading">Courses</h1>
+        <div class="divlist">
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+                <li><a href="https://react.dev/">React</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        ul li {
+            float: left;
+            list-style-type: none;
+            width: 300px;
+            line-height: 30px;
+            background-color: darkseagreen;
+        }
+        ul li ul {
+            display: none;
+        }
+        ul li:hover {
+            color: white;
+            background-color: rgb(179, 138, 138);
+        }
+        ul li:hover > ul{
+            display: block;
+        }
+        ul li ul li{
+            display: inline;
+            position: relative;
+        }
+        ul li ul li ul {
+            position: absolute;
+            left: 300px;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <ul>
+            <li>
+                Apple
+                <ul>
+                    <li>Mobiles</li>
+                    <li>iPads</li>
+                    <li>MacBook</li>
+                </ul>
+            </li>
+            <li>
+                Samsung
+                <ul>
+                    <li>Appliances</li>
+                    <li>television</li>
+                    <li>Mobiles
+                        <ul>
+                            <li>S22 Ultra</li>
+                            <li>Samsung M12</li>
+                            <li>Samsung z flip 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Sony
+                <ul>
+                    <li>Speakers</li>
+                    <li>Television</li>
+                    <li>Washing machines</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
