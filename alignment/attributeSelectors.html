@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 20px;
+        }
+        a[target] {
+            background-color: red;
+        }
+        [title ~= 'leaf'] {
+            border: 20px solid red
+        }
+        [class|="top"] {
+            color: blue;
+        }
+        [class^="bottom"] {
+            color: green
+        }
+        [class$="test"] {
+            background-color: pink
+        }
+        [class*="ab"] {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https://www.digimaniac.in">www.digimaniac.in</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    </div>
+    <div>
+        <img src="../assets/images/backgroundImage.webp" title="klematis nature" width="150" height="113" alt="nature">
+        <img src="../assets//images/wallpaper.jpeg" title="leaf" width="224" height="162" alt="leaf">
+    </div>
+
+    <div>
+        <h1 class="top-header">Welcome</h1>
+        <p class="top-text">Hello world!</p>
+        <p class="topcontent">Learn html/CSS?</p>
+    </div>
+
+    <div>
+        <h1 class="bottom-header">Welcome</h1>
+        <p class="bottom-text">Hello world!</p>
+        <p class="bottomcontent">Learn html/CSS?</p>
+    </div>
+
+    <div style="margin-top: 30px;">
+        <div class="first_test">The first div element.</div>
+        <div class="second">The second div element.</div>
+        <div class="my-test">The third div element.</div>
+        <p class="mytest">This is some text in a paragraph.</p>
+    </div>
+
+    <div style="margin-top: 30px;">
+        <div class="first">The first div element.</div>
+        <div class="second-ab">The second div element.</div>
+        <div class="thirdab">The third div element.</div>
+        <p class="forthpara-ab">This is some text in a paragraph.</p>
+    </div>
+</body>
+</html>
