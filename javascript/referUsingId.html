@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyLoad() {
+            document.getElementById("hi").src="../assets/images/wallpaper.jpeg";
+            document.getElementById("textButton").value = "Press Me"
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img id="hi" width="300px" height="300px">
+    </div>
+    <form action="">
+        Name: <input type="text" id="textName">
+        <input type="button" id="textButton">
+    </form>
+</body>
+</html>

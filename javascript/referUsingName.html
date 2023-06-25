@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyLoad() {
+            pic.src = "../assets/images/wallpaper.jpeg";
+            home.buttonRegister.value = "Register here";
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img width="300px" height="300px" border="10px" name="pic">
+    </div>
+    <div>
+        <form action="#" name="home">
+            Name: <input type="text">
+            <input type="button" name="buttonRegister">
+        </form>
+    </div>
+</body>
+</html>

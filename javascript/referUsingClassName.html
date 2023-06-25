@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .headingClass {
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+    <script>
+        function bodyLoad() {
+            let getVal = document.getElementsByClassName("headingClass");
+            alert("Total no of elemnts using headingClass: " + getVal.length);
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <h2 class="headingClass">Welcome JavaScript</h2>
+</body>
+</html>

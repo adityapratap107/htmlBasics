@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function deleteClick() {
+            x = confirm("Records will be deleted?");
+            msg = document.getElementById("msg");
+            if(x==true) {
+                msg.innerText = "Record Deleted";
+            } else {
+                msg.innerHTML = "<h2 style='color: red'>Action Cancelled!!</h2>"
+            }
+            console.log("Page loaded successfully")
+        }
+    </script>
+</head>
+<body onload="deleteClick()">
+    <div id="msg">
+    </div>
+</body>
+</html>

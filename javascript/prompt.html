@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createFolder() {
+            let name = prompt("Folder Name: ", "New_Folder")
+            let msg = document.getElementById("msg");
+            if(name == null) {
+                document.write("Action Cancelled")
+            } else {
+                msg.innerHTML = msg.innerHTML + "Folder created : " + name + "<br>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form action="">
+            <input type="button" value="Create Folder" onclick="createFolder()">
+            <div id="msg"></div>
+        </form>
+    </div>
+</body>
+</html>
