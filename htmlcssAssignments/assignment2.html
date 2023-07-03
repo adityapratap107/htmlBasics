@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white
+        }
+        .container {
+            height: 200vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url("../assets/images/skynight.jpg");
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px
+        }
+        .nav-logo {
+            color: rgb(242, 93, 24);
+            margin-left: 40px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color:white;
+            margin-left: 100px;
+
+        }
+        .nav-links a:hover {
+            color: rgb(242, 93, 24);
+
+        }
+        .nav-links {
+            flex-grow: 1;
+            display: flex;
+            margin-left: 400px;
+
+        }
+        .search-container {
+            margin-right: 150px;
+            display: flex;
+            width: 300px;
+        }
+        .nav-search {
+            height: 38px;
+            background-color: transparent;
+            width: 100%;
+            border: 1px solid rgba(242, 93, 24, 0.5);
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            color: white;
+            padding-left: 14px;
+            padding-right: 10px;
+        }
+        .search-btn {
+            width: 100px;
+            background-color: rgb(242, 93, 24);
+            border: 1px solid transparent;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+        .nav-search:focus{
+            outline: none;
+        }
+        #guest {
+            margin-right: 20px;
+        }
+        .section-container {
+            color: white;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            position: relative;
+        }
+        .heading-white {
+            font-size: 3rem;
+        }
+        .heading-orange {
+            font-size: 3.5rem;
+            color: rgb(242, 93, 24);
+        }
+        .description {
+            color: rgb(201, 201, 201);
+        }
+        .joinus-btn {
+            padding: 12px;
+            width: 100px;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: rgb(242, 93, 24);
+            color: white;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .login-container {
+            background-color: rgb(20, 20, 20);
+            border-radius: 6px;
+            height: 600px;
+            width: 400px;
+            position: absolute;
+            right: 200px;
+            top: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .loginHere-btn {
+            background-color: white;
+            border-radius: 6px;
+            color: rgb(242, 93, 24);
+            font-size: 1.5rem;
+            width: 300px;
+            height: 48px;
+            letter-spacing: 4px;
+            margin-top: 20px;
+            cursor: pointer;
+
+        }
+        .username {
+            width: 300px;
+            height: 44px;
+            margin-top: 60px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgb(242, 93, 24);
+            font-size: 1rem;
+            color: white
+        }
+        .username:focus {
+            outline: none;
+        }
+        .loginbtn {
+            padding: 12px;
+            width: 200px;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: rgb(242, 93, 24);
+            color: white;
+            font-size: 16px;
+            margin-top: 60px;
+        }
+        .bottomText {
+            margin-top: 16px;
+        }
+        span {
+            color: rgb(242, 93, 24);
+            cursor: pointer;
+        }
+    
+        .para-text2 {
+            font-size: 1rem;
+            margin-left: 8px;
+        }
+        .signup-text {
+            display: flex;
+            justify-content: center;
+        }
+        .or{
+            margin-top: 12px;
+        }
+        .or-text{
+            color:rgb(201, 201, 201);
+        }
+        .icons {
+            margin-top: 30px;
+        }
+        .icons i {
+            margin-right: 30px;
+        }
+    </style>
+
+    <script>
+        function printName() {
+            let name = document.getElementById("name");
+            let password = document.getElementById("password").value;
+            let guest = document.getElementById("guest");
+            guest.innerHTML = name.value;
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="nav-logo">
+                    <h1>Heading</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">SERVICE</a>
+                    <a href="#">DESIGN</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <div class="search-container">
+                    <input type="search" class="nav-search" placeholder="Search here">
+                    <input type="button" class="search-btn" value="Search">
+                </div>
+
+                <div id="guest">
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="section-container">
+                <div>
+                    <h1 class="heading-white">Web Design & </h1>
+                    <h1 class="heading-orange">Development</h1>
+                    <h1 class="heading-white">Course</h1>
+                    <p class="description">Web design is a specilization of the design stream. They also use HTML,<br>CSS , markup validators etc. to create design elements.</p>
+                    <input type="button" class="joinus-btn" value="Join us">
+                </div>
+                <div class="login-container">
+                    <input type="button" class="loginHere-btn" value="Login here">
+                    <input type="text"  class="username" id="name" placeholder="Username">
+                    <input type="password"  class="username password" id="password" placeholder="Password">
+                    <input type="button" value="Login" class="loginbtn" onclick="printName()">
+                    <div class="bottomText">
+                        <p>Don't have an account?</p>
+                        <div class="signup-text">
+                            <span>Sign up?</span>
+                            <p class="para-text2">here</p>
+                        </div>
+                    </div>
+                    <div class="or">
+                        <p class="or-text">OR</p>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-google fa-xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-skype fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            color: white;
+        }
+        body {
+            background: linear-gradient(rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url("../assets/images/mountains.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 5rem;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            margin-left: 20px;
+        }
+        .nav-links {
+            /* margin-left: 20rem; */
+
+        }
+        .nav-links ul {
+            list-style-type: none;
+            display: flex;
+            width: 40rem;
+            justify-content: space-between;
+        }
+        .nav-links a{
+            text-decoration: none;
+            /* margin-left: 10rem; */
+            font-size: 1.2rem;
+        }
+        .nav-links a:hover {
+            color: rgb(243, 158, 0);
+        }
+        .button {
+            /* margin-left: 10rem; */
+            margin-right: 10rem;
+        }
+        .started-button {
+            height: 2.5rem;
+            width: 6rem;
+            padding: 6px;
+            color: white;
+            background-color: rgb(243, 158, 0);
+            border-radius: 24px;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+        .started-button:active {
+            scale: 0.95
+        }
+        .section-container {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .section-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-header {
+            font-size: 4rem;
+        }
+        .description {
+            width: 600px;
+        }
+        .hamburger {
+            /* display: none; */
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .dropdown_menu {
+            position: absolute;
+            background-color: rgba(255,255,255,0.1);
+            width: 300px;
+            top: 60px;
+            right: 10px;
+            height: 150px;
+        }
+        .dropdown_menu ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dropdown_menu li, a {
+            list-style-type: none;
+            text-decoration: none;
+            margin-top: 8px;
+        }
+        .more_details {
+            margin-top: 20px;
+        }
+        .box {
+            height: 300px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            top: 10rem;
+            right: 20rem;
+            background-image: url('../assets/images/nightsky.jpeg');
+            border-radius: 20px;
+            background-size: cover;
+            transition: all 0.5s ease-in ;
+        }
+        .box:hover {
+            scale: 1.1;
+        }
+        .box2 {
+            background-image: url('../assets/images/travel.jpeg');
+            right: 5rem;
+        }
+        @media (max-width: 900px) {
+            .nav-links ul,
+            .button {
+                display: none;
+            }
+            .navbar .hamburger {
+                display: block;
+            }
+            .description {
+                width: 10rem;
+            }
+            .box {
+                display: none;
+            }
+            .navbar {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <h1>Header</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="button">
+                <input type="button" class="started-button" value="Get started">
+            </div>
+
+            <!-- <div class="hamburger">
+                <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+            </div>
+
+                <ul class="dropdown_menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a class="started-button" href="#">Get Started</a></li>
+
+                    </ul>
+                </ul> -->
+        </div>
+    </header>
+    <section>
+        <div class="section-container">
+            <div class="section-inner">
+                <h1 class="section-header">Welcome</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure dolorum ad tempora assumenda ut dolore beatae reiciendis, quo, tenetur quia nihil. Voluptas provident pariatur nam quod earum suscipit impedit perspiciatis libero id, soluta temporibus unde vero tempore culpa aperiam exercitationem qui! Tempore debitis facere iste voluptatem unde? </p>
+                <input type="button" class="started-button more_details" value="More Details">
+            </div>
+            <div class="box">
+            </div>
+            <div class="box box2">
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

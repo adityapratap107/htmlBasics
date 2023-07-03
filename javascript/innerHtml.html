@@ -9,6 +9,7 @@
         function deleteClick() {
             x = confirm("Records will be deleted?");
             msg = document.getElementById("msg");
+            console.log('X=', x)
             if(x==true) {
                 msg.innerText = "Record Deleted";
             } else {

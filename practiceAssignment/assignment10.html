@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 500px;
+        border: 2px solid black;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+    <script>
+      function showProducts() {
+        const productNames = ["Tv", "iPhone", "Shoes", "Puma"];
+        let productImages = [
+          "https://www.reliancedigital.in/medias/Samsung-75BU8000-Television-492796826-i-3-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2NDgyOHxpbWFnZS9qcGVnfGltYWdlcy9oMWIvaDEyLzk4NDg0MTE5MTQyNzAuanBnfGMzODlkNWNhMGFjNzQ2Y2ZlNjg5NzM4NWMxZjY5ZDc5OGE0M2M1OTY3NmFmYTc2ZGJmY2ZmMzhiMDFlMmZjOTc",
+          "https://idestiny.in/wp-content/uploads/2022/09/iPhone_14_Pro_Deep_Purple_PDP_Image_Position-1a_Avail__en-IN.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEWF53UbDAezheyzqQggg6sy2GZXaCMq9E3g&usqp=CAU",
+          "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/673391/44/fnd/IND/fmt/png/Dyna-Mix-Men's-Regular-Fit-T-Shirt"
+        ];
+
+        let prodName = document.getElementById("prodName");
+        let pic = document.getElementById("pic");
+        let txtRange = document.getElementById("txtRange");
+        prodName.innerHTML = productNames[txtRange.value];
+        pic.src = productImages[txtRange.value];
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <th id="prodName">Tv</th>
+        </tr>
+        <tr>
+          <td>
+            <img
+            
+              src="https://www.reliancedigital.in/medias/Samsung-75BU8000-Television-492796826-i-3-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2NDgyOHxpbWFnZS9qcGVnfGltYWdlcy9oMWIvaDEyLzk4NDg0MTE5MTQyNzAuanBnfGMzODlkNWNhMGFjNzQ2Y2ZlNjg5NzM4NWMxZjY5ZDc5OGE0M2M1OTY3NmFmYTc2ZGJmY2ZmMzhiMDFlMmZjOTc"
+              id="pic"
+              alt=""
+              height="500px"
+              width="500px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="range"
+              id="txtRange"
+              min="0"
+              max="3"
+              value="0"
+              onchange="showProducts()"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

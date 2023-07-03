@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+    <script>
+        function verifyPassword() {
+            var pwd = document.getElementById("textpwd").value;
+            var msg = document.getElementById("msg");
+            var grade = document.getElementById("grade");
+
+            function showGrade(min,max,value,low,high) {
+                grade.min = min;    
+                grade.max = max;
+                grade.value = value;
+                grade.low = low;
+                grade.high = high;
+            }
+
+            let regExp =/^[A-Z]{6,16}$/
+            if(pwd.match(regExp)) {
+                console.log('strong password')
+                msg.innerHTML = "Strong Password"
+                showGrade(1,100,100,0,0)
+            } else {
+                if(pwd.length < 4) {
+                    msg.innerHTML = "poor password"
+                    showGrade(1,100,100,60,80)
+
+                } else {
+                    msg.innerHTML = "Weak Password";
+                    showGrade(1,100,100,40,80)
+
+                }
+            }
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Password</legend>
+            <input type="password" id="textpwd" onkeyup="verifyPassword()">
+            <meter min="1" max="100" id="grade" value="0" low="0" high="0"></meter>
+            <span id="msg"></span>
+        </fieldset>
+        <!-- <button type="submit" value="Submit" onclick="verifyPassword()">Submit</button> -->
+    </div>
+</body>
+</html>

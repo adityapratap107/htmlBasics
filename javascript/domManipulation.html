@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onBodyLoad() {
+            let x = document.getElementById("main");
+            console.log('element by id',x);
+            let y = x.getElementsByTagName("p");
+            console.log('element by tag name',y);
+            document.getElementById("section").innerHTML = "<p>This is third para under div section</p> " + y[0].innerHTML
+        }
+    </script>
+</head>
+<body onload="onBodyLoad()">
+    <div id="main">
+        <p>This is first para</p>
+        <p>This is second para</p>
+    </div>
+
+    <div id="section">
+
+    </div>
+</body>
+</html>

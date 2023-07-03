@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onSubmitPress() {
+            let userDetails = {userName: 'john', pin: '123', otp: '321654'};
+            let textName = document.getElementById("textName").value;
+            let textCode = document.getElementById("textCode").value;
+            let submitBtn = document.getElementById("submitBtn");
+            let msg = document.getElementById("msg");
+
+            if(userDetails.userName === textName) {
+                if(userDetails.pin == textCode) {
+                    msg.innerHTML = "Pin verified"
+                } else if (userDetails.otp == textCode) {
+                    msg.innerHTML = "OTP verified"
+                } else {
+                    msg.innerHTML = "Invalid otp"
+                }
+            } else {
+                msg.innerHTML = "Invalid username"
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Payment</legend>
+        <dl>
+            <dt>Name on card</dt>
+            <dd>
+                <input type="text" id="textName">
+            </dd>
+            <dt>
+                Pin/OTP
+            </dt>
+            <dd>
+                <input type="number" id="textCode">
+            </dd>
+        </dl>
+    </fieldset>
+    <input type="button" value="Submit" id="submitBtn" onclick="onSubmitPress()">
+    <div id="msg"></div>
+</body>
+</html>

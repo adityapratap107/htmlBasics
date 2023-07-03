@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white
+        }
+        .outer-container {
+            background-image: url('../assets/images/travel.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            opacity: 0.8;
+        }
+        .navbar {
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        .headerLogo p {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+        }
+        a {
+            text-decoration: none;
+            margin-left: 80px;
+            color: white;
+            font-size: 1rem;
+            position: relative;
+        }
+        a:before {
+            content: '';
+            border-bottom: 1px solid tomato;
+            position: absolute;
+            height: 100%;
+            width: 0%;
+            transition: 0.4s linear;
+        }
+        a:hover:before {
+            width: 90%;
+        }
+        .register-btn {
+            background-color: tomato;
+            padding: 8px;
+            border-radius: 6px;
+            width: 100px;
+            letter-spacing: 2px;
+            border: 1px solid transparent;
+        }
+        .register-btn:hover {
+            background-color: transparent;
+            border: 1px solid tomato;
+            cursor: pointer;
+            transition: all;
+            transition-duration: 0.5s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+        }
+        .section-container {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-inner {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+        .text-1 {
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        .divtext-2 {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+        .book-btn {
+            background-color: tomato;
+            padding: 8px;
+            border-radius: 3px;
+            width: 200px;
+            letter-spacing: 2px;
+            word-spacing: 6px;
+            margin-top: 20px;
+            border: 1px solid transparent;
+        }
+        .book-btn:hover {
+            background-color: transparent;
+            border: 1px solid tomato;
+            cursor: pointer;
+            transition: all;
+            transition-duration: 0.5s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <header>
+            <div class="navbar">
+                <div class="headerLogo">
+                    <p>Travel-X</p>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Hill Stations</a>
+                    <a href="#">Best Offer's</a>
+                    <a href="#">Our Sites</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div>
+                    <input  class="register-btn" type="button" value="Register">
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="section-container">
+                <div class="section-inner">
+                    <p class="text-1">Enjoy</p>
+                    <div class="divtext-2">
+                        <h1>International Travel </h1>
+                        <h1>Agency</h1>
+                    </div>
+                    <div>
+                        <input type="button" class="book-btn" value="Book your trip">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onLoginPress() {
+            let userText = document.getElementById("userText");
+            let pwdText = document.getElementById("pwdText");
+            let msg = document.getElementById("msg");
+            let validuser = { username: "john", password: "Admin123"}
+            if(userText.value !== validuser.username || pwdText.value !== validuser.password) {
+                msg.innerHTML = "Invalid username or password"
+            } else {
+                msg.innerHTML = "Login Successfully!!"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Login</legend>
+            <dl>
+                <dt>UserName</dt>
+                <dd><input type="text" id="userText"></dd>
+            </dl>
+            <dl>
+                <dt>Password</dt>
+                <dd><input type="password" id="pwdText"></dd>
+            </dl>
+                       
+            <input type="button" value="Login" onclick="onLoginPress()">
+        </fieldset>
+    </div>
+    <div id="msg">
+
+    </div>
+</body>
+</html>

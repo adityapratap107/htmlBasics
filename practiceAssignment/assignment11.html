@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table td{
+        width: 500px;
+        border: 2px solid black;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+    <script>
+      function showProducts() {
+        const products = [
+            {
+                id: 1,
+                name: "Television Oled",
+                price: 30000,
+                image: 'https://www.reliancedigital.in/medias/Samsung-75BU8000-Television-492796826-i-3-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2NDgyOHxpbWFnZS9qcGVnfGltYWdlcy9oMWIvaDEyLzk4NDg0MTE5MTQyNzAuanBnfGMzODlkNWNhMGFjNzQ2Y2ZlNjg5NzM4NWMxZjY5ZDc5OGE0M2M1OTY3NmFmYTc2ZGJmY2ZmMzhiMDFlMmZjOTc',
+                isInStock: true,
+                quantity: 3,
+                shippedTo: ['delhi','mumbai'],
+            },
+            {
+                id: 2,
+                name: "iPhone",
+                price: 120000,
+                image: 'https://idestiny.in/wp-content/uploads/2022/09/iPhone_14_Pro_Deep_Purple_PDP_Image_Position-1a_Avail__en-IN.jpg',
+                isInStock: true,
+                quantity: 2,
+                shippedTo: ['delhi','mumbai','kurukshetra'],
+            },
+            {
+                id: 3,
+                name: "Shoes",
+                price: 6999,
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEWF53UbDAezheyzqQggg6sy2GZXaCMq9E3g&usqp=CAU',
+                isInStock: true,
+                quantity: 2,
+                shippedTo: ['delhi','mumbai','kurukshetra'],
+            },
+            {
+                id: 4,
+                name: "Puma Tshirt",
+                price: 2999,
+                image: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/673391/44/fnd/IND/fmt/png/Dyna-Mix-Men's-Regular-Fit-T-Shirt",
+                isInStock: true,
+                quantity: 2,
+                shippedTo: ['delhi','mumbai','kurukshetra'],
+            },
+        ];
+
+        const pic = document.getElementById('pic');
+        const prodId = document.getElementById('prodId');
+        const prodName = document.getElementById('prodName');
+        const prodPrice = document.getElementById('prodPrice');
+        const prodIsInStock = document.getElementById('prodIsInStock');
+        const prodQty = document.getElementById('prodQty');
+        const txtRange = document.getElementById('txtRange');
+        
+        pic.src = products[txtRange.value].image;
+        prodId.innerHTML = products[txtRange.value].id
+        prodName.innerHTML = products[txtRange.value].name;
+        prodPrice.innerHTML = products[txtRange.value].price;
+        prodIsInStock.innerHTML = products[txtRange.value].isInStock;
+        prodQty.innerHTML = products[txtRange.value].quantity;
+
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <img
+                src=""
+                id="pic"
+                alt=""
+                height="500px"
+                width="500px"
+              />
+          </td>
+        </tr>
+        <tr>
+          <td>product id</td>
+          <td id="prodId"></td>
+        </tr>
+        <tr>
+          <td>product name</td>
+          <td id="prodName"></td>
+        </tr>
+        <tr>
+          <td>product price</td>
+          <td id="prodPrice"></td>
+        </tr>
+        <tr>
+          <td>product in Stock?</td>
+          <td id="prodIsInStock"></td>
+        </tr>
+        <tr>
+          <td>product quantity</td>
+          <td id="prodQty"></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="range"
+              id="txtRange"
+              min="0"
+              max="3"
+              value="0"
+              onchange="showProducts()"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

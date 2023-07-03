@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            height: 800px;
+            /* width: 900px; */
+            background-color: rgb(44, 127, 124);
+            display: grid;
+            /* grid-template-rows: 130px 130px 130px;
+            grid-template-columns: 130px 130px 130px; */
+            /* grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr); */
+            grid-template-rows: 100px 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+            /* justify-items: center; */
+        }
+        .box {
+            height: 120px;
+            width: 120px;
+            background-color: rgb(250, 196, 70);
+        }
+        .box1 {
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            grid-column: 1 / span 3;
+            justify-self: center;
+        }
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            header
+        </div>
+        <div class="box">Lorem.</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box footer"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box "></div>
+    </div>
+</body>
+</html>

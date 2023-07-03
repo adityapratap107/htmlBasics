@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>non - primitives datatype</title>
+    <script>
+        "use strict"
+        function f1() {
+
+            // non primitives
+            // arrays
+            let product = [1, "product name", 100.3, true];
+            document.write("id: ", product[0] + "<br>" + product[1] + "<br>" + product[2] + "<br>" + product[3])
+        }
+        // f1();
+
+        function f2() {
+            let product = {
+                id: 1,
+                name: "Television Oled",
+                price: 30000,
+                isInStock: true,
+                quantity: 3,
+                shippedTo: ['delhi','mumbai'],
+                total: function() {
+                    return product.quantity * product.price
+                }
+            }
+            let stock;
+            if(product.isInStock) {
+                stock = "Available"
+            } else {
+                stock = "Out of stock"
+            }
+
+            document.write("ID: ", product.id, "<br>", "Name: ", product.name, "<br>", "Price: ", product.price,"<br>", "isInStock: ", stock, "<br>", "Shipped to: ", product.shippedTo[1],"<br>", "Total: ", product.total() )
+        }
+        f2();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
