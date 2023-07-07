@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .navbar {
+            height: 55px;
+            background: #270082;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .nav_title {
+            margin-left: 68px;
+        }
+        .nav_links {
+            margin-right: 80px;
+        }
+        .nav_links a{
+            text-decoration: none;
+            margin-right: 80px;
+        }
+        .hero_section {
+            background: linear-gradient(rgba(1,1,1,0.1), rgba(1,1,1,0.1)) , url('../assets/images/music.jpg');
+            height: 1024px;
+            width: 100%;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero_inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 230px;
+        }
+        .hero_inner h1 {
+            font-size: 72px;
+        }
+        .hero_para1 {
+            font-size: 24px;
+        }
+        .hero_description {
+            font-size: 18px;
+            width: 820px;
+            text-align: center;
+        }
+        .hero_section2 {
+            height: 806px;
+            background-color: #281154;
+            position: relative;
+            justify-content: center;
+        }
+        .hero_inner2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 360px;
+        }
+        .hero_inner2 h1 {
+            font-size: 36px;
+        }
+        .music_img {
+            height: 50px;
+            width: 50px;
+        }
+        .music_text_container {
+            display: flex;
+            width: 160px;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .trialnow_button {
+            background-color: #DC0000;
+            height: 55px;
+            width: 183px;
+            border: none;
+            outline: none;
+        }
+        .para3 {
+            color: #fff;
+            font-size: 14px;
+
+        }
+        .hero_section3 {
+            height: 200vh;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tablet_inner {
+            background-image: url('../assets/images/tablet.png');
+            position: absolute;
+            height: 930px;
+            width: 1330px;
+            left: 2rem;
+            border-radius: 8px;
+            top: 2rem;
+            background-size: cover;
+
+        }
+        .tabletImg {
+            height: 800px;
+            position: absolute;
+            right: 20rem;
+            top: 30rem;
+            left: 20rem;
+        }
+        .tabletContent {
+            height: 740px;
+            position: absolute;
+            width: 1050px;
+            right: 20rem;
+            top: 32rem;
+            left: 22rem;
+            border-radius: 8px;
+        }
+        .phoneImg {
+            height: 900px;
+            position: absolute;
+            right: 20rem;
+            top: 38rem;
+
+
+        }
+        .hero_inner3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 14rem;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .hero_inner3 h1{
+            color: black;
+        }
+        .hero_inner3 p {
+            color: black;
+            text-align: center;
+            width: 1100px;
+            font-size: 18px;
+        }
+        .readmore_btn {
+            background-color: #270082;
+            height: 50px;
+            width: 114px;
+            border: none;
+        }
+        .macbook_container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .macbook {
+            height: 500px
+        }
+        .heroview {
+            margin-top: 24rem;
+        }
+        .hero_section4 {
+            height: 100vh;
+            background: linear-gradient(rgba(1,1,1,0.5), rgba(1,1,1,0.5)) , url('../assets/images/concert.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero_section5 {
+            height: 80vh;
+            background-color: white;
+
+        }
+        .hero_inner5 {
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            height: 34rem;
+        }
+        .hero_inner5 h1{
+            font-size: 24px;
+            color: black;
+        }
+        .hero_inner5 p{
+            font-size: 14px;
+            color: black;
+
+        }
+        .cardImg {
+            width: 468px;
+            height: 310px;
+        }
+        .card_container {
+            margin-left: 72px;
+            height: 16rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .hero_description2 {
+            width: 570px;
+        }
+        .paraalign {
+            margin-top: 16px;
+        }
+        .line {
+            border: 1px solid lightgray;
+        }
+        .redeem_btn {
+            background-color: #37008E;
+            height: 40px;
+            width: 80px;
+            border: none;
+        }
+        .footer_section {
+            height: 28rem;
+            background-color:#1B0058;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .footer_section ul {
+            list-style-type: none;
+        }
+        .footer_header {
+            font-size: 18px;
+            margin-bottom: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid white;
+            width: 200px;
+        }
+        .footer2 {
+            background-color: #270082;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav_title">
+                <h1>myTunes</h1>
+            </div>
+            <div class="nav_links">
+                <a href="#">Overview</a>
+                <a href="#">Music</a>
+                <a href="#">Video</a>
+                <a href="#">Gift Cards</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="hero_section">
+            <div class="hero_inner">
+                <h1>myTunes</h1>
+                <p class="hero_para1">Your music, movies, and TV shows take center stage.</p>
+                <p class="hero_description">myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+            </div>
+        </div>
+
+        <div class="hero_section2">
+            <div class="hero_inner2">
+                <div class="music_text_container">
+                    <img src="../assets/images/foundation_music.png" class="music_img" alt="Music_image">
+                    <h1>Music</h1>
+                </div>
+                <p class="hero_para1">45 million songs. Zero ads.</p>
+                <p class="hero_description">Stream over 45 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal myTunes library — no matter where it came from — lives right alongside the Orange Music catalog. Start your free three-month trial with no commitment, and cancel anytime.</p>
+                    <button class="trialnow_button">Start Your Trial Now</button>
+                <p class="para3">Orange Music is available in myTunes, and for iOS and Android devices.</p>
+            </div>
+
+            <img src="../assets/images/tablet_bg.png" class="tabletImg" alt="">
+            <img src="../assets/images/tablet.png" class="tabletContent" alt="">
+            <img src="../assets/images/phone_img.png" class="phoneImg" alt="">
+
+        </div>
+
+        <div class="hero_section3">
+            <div class="heroview">
+                <div class="hero_inner3">
+                    <h1>The movie and TV collection you always wished for. Granted.</h1>
+                    <p>With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myTunes and if you watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
+                    <button class="readmore_btn">Read More</button>
+                    
+                </div>
+                <div class="macbook_container">
+                    <img src="../assets/images/MacBook_pro.png" class="macbook" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hero_section4">
+            <div class="hero_inner">
+                <h1>A world of entertainment. Available wherever you are.</h1>
+                <p class="hero_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium soluta delectus!</p>
+            </div>
+        </div>
+
+        <div class="hero_section5">
+            <div class="hero_inner5">
+                <img src="../assets/images/card.png" class="cardImg" alt="">
+                <div class="card_container">
+                    <h1>Gift cards</h1>
+                    <p class="hero_description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium soluta delectus!</p>
+                    <p class="hero_para1 paraalign">Already have an Orange MyTunes Music Gift Card?</p>
+                    <div class="line"></div>
+                    <div>
+                        <button class="redeem_btn">Redeem</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer_section">
+            <ul>
+                <li class="footer_header">Shop & Learn</li>
+                <li>Music</li>
+                <li>Videos</li>
+                <li>Shows</li>
+                <li>Apps</li>
+                <li>Gift cards</li>
+            </ul>
+            <ul>
+                <li class="footer_header">Orange Store</li>
+                <li>Find a store</li>
+                <li>Today at Orange</li>
+                <li>Orange Camp</li>
+                <li>Financing</li>
+                <li>Order Status</li>
+            </ul>
+            <ul>
+                <li class="footer_header">Education & Business</li>
+                <li>Orange & Education</li>
+                <li>Shop for Collage</li>
+                <li>Orange & Business</li>
+                <li>Shop For Business</li>
+                <li>Jobs</li>
+            </ul>
+            <ul>
+                <li class="footer_header">About Orange</li>
+                <li>Newsroom</li>
+                <li>Orange Leadershp</li>
+                <li>Investors</li>
+                <li>Events</li>
+                <li>Contact Orange</li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <p>Copyright © 2022 Do Some Coding</p>
+        </div>
+    </footer>
+</body>
+</html>

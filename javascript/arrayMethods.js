@@ -162,3 +162,8 @@ months.splice(4, 1, 'May');
 // Replaces 1 element at index 4
 console.log(months);
 // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+
+const p2 = 'Mr Blue has a blue house and a blue car.';
+const regex2 = /blue/g;
+console.log(p2.replace(regex2, 'red'));

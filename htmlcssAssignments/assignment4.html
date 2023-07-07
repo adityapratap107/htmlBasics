@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Layout</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        height: 600px;
+        width: 800px;
+        background-color: white;
+        border-radius: 8px;
+        margin-top: 80px;
+        box-shadow: 4px 4px 4px rgba(1, 1, 1, 0.1);
+      }
+      .heading {
+        padding: 20px;
+      }
+      .form-container {
+        padding: 20px;
+      }
+      .inputbox {
+        height: 34px;
+        border-radius: 6px;
+        width: 250px;
+        border: 1px solid lightgray;
+        outline: none;
+        padding-left: 8px;
+        font-size: 1rem;
+      }
+      label {
+        font-size: 1.1rem;
+
+      }
+      .form-control {
+        display: flex;
+        margin-top: 20px;
+      }
+      .forminput {
+        display: flex;
+        flex-direction: column;
+        margin-right: 8rem;
+      }
+      #upload {
+        background-color: white;
+        padding-top: 10px;
+      }
+      .button_container {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .apply_btn {
+        background-color: red;
+        padding: 12px;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        margin-right: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h2>Job Application (Web)</h2>
+      </div>
+      <form action="">
+        <div class="form-container">
+          <div class="form-control">
+            <div class="forminput">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                class="fname inputbox"
+                placeholder="Enter first Name"
+              />
+            </div>
+            <div class="forminput">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                class="lname inputbox"
+                placeholder="Enter Last Name"
+              />
+            </div>
+          </div>
+
+          <div class="form-control">
+            <div class="forminput">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="email inputbox"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="forminput">
+              <label for="job_role">Job Role</label>
+              <select name="job_role" id="job_role" class="inputbox">
+                <option value="">Select Job Role</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="full_stack">Full Stack Developer</option>
+                <option value="ui_ux">UI UX Designer</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <div class="forminput">
+
+            <label for="address">Address</label>
+            <textarea
+              name="address"
+              id="address"
+              cols="80"
+              rows="4"
+              placeholder="Enter address"
+            ></textarea>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <div class="forminput">
+              <label for="city">City</label>
+              <input
+                type="text"
+                id="city"
+                class="inputbox"
+                placeholder="Enter city Name"
+              />
+            </div>
+
+            <div class="forminput">
+              <label for="pincode">Pincode</label>
+              <input
+                type="number"
+                class="inputbox"
+                id="pincode"
+                placeholder="Enter PIN code"
+              />
+            </div>
+          </div>
+
+          <div class="form-control">
+            <div class="forminput">
+
+            <label for="date">Date</label>
+            <input type="date" id="date" class="inputbox" value="2023-07-05" />
+            </div>
+            <div class="forminput">
+
+                <label for="upload">Upload your CV</label>
+                <input type="file" id="upload" class="inputbox" />
+                </div>
+
+          </div>
+        </div>
+
+        <!-- button container -->
+        <div class="button_container">
+          <button type="submit" class="apply_btn">Apply Now</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
