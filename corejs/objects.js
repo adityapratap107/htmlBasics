@@ -16,4 +16,21 @@
 // console.log(Number.isNaN("name"));
 // console.log(Number.isNaN("2"));
 
-console.log(Number.isNaN("aditya")) 
+// console.log(Number.isNaN("aditya")) 
+
+
+
+// array destructuring
+// const person = {
+//     name: "abc",
+//     age: 32,
+//     gender: 'male'
+// };
+
+// const {name, age, gender} = person;
+// console.log(age)
+
+
+const sum = (num1, num2) => num1 + num2;
+
+console.log(sum(2,3));
