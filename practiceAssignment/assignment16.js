@@ -1,8 +1,32 @@
 const inputVal = document.getElementById('inputbox');
 const submitBtn = document.getElementById('submitBtn');
-submitBtn.addEventListener('click', onSubmitPress)
+submitBtn.addEventListener('click', onSubmitPress);
 const listItems = document.getElementById('list_container');
-listItems.addEventListener('click', onDeletePress)
+listItems.addEventListener('click', onDeletePress);
+
+const filter = document.getElementById("filter");
+filter.addEventListener('keyup', filterItems)
+
+// filter items
+function filterItems(e) {
+    // convert to lowercase
+    let text = e.target.value.toLowerCase();
+    let items = listItems.getElementsByTagName('li');
+    console.log(items);
+    // convert htmllist to an array
+    console.log('Array_item', Array.from(items))
+    Array.from(items).forEach(function(item) {
+        console.log('item', item)
+        let itemName = item.firstChild.textContent;
+        console.log(itemName);
+        if(itemName.toLowerCase().indexOf(text) != -1) {
+            item.style.display='flex';
+            item.style.display='space-between'
+        } else {
+            item.style.display ='none';
+        }
+    })
+}
 
 function onDeletePress(e) {
     if(e.target.classList.contains('delete')) {

@@ -13,8 +13,7 @@
 // const person1 = new Person("abc", "def", "2-3-1993");
 // console.log(person1);
 // // console.log(person1.fullName());
-// // console.log(person1.getBirthYear());
-
+// console.log(person1.getBirthYear());
 
 
 // Alternate way

@@ -13,8 +13,13 @@
             display: grid;
             /* grid-template-rows: 130px 130px 130px;
             grid-template-columns: 130px 130px 130px; */
+
+            /* grid-template-rows: repeat(3, 130px);
+            grid-template-columns: repeat(3, 130px); */
+
             /* grid-template-rows: repeat(3, 1fr);
             grid-template-columns: repeat(3, 1fr); */
+            
             grid-template-rows: 100px 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr;
             row-gap: 10px;
@@ -29,12 +34,13 @@
         .box1 {
             /* grid-column-start: 1;
             grid-column-end: 4; */
-            grid-column: 1 / span 3;
-            justify-self: center;
+
+            /* grid-column: 1 / span 3;
+            justify-self: center; */
         }
         .footer {
-            grid-column-start: 1;
-            grid-column-end: 4;
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
         }
     </style>
 </head>
