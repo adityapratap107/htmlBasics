@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            height: 5vh;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav_links a{
+            text-decoration: none;
+            color: black;
+            margin-right: 48px;
+        }
+        .section_container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section_container .name {
+            font-size: 16px;
+            color: pink;
+        }
+        .section_container .sub_title {
+            font-size: 54px;
+            text-transform: uppercase;
+            width: 600px;
+            margin-top: 20px;
+        }
+        .cat_list p{
+            margin-top: 20px;
+        }
+        .dev_img_container {
+            height: 600px;
+            width: 400px;
+            margin-right: 72px;
+            border: 2px solid orangered;
+            border-radius: 16px;
+            position: relative;
+        }
+        .dev_img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            width: 400px;
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            border-radius: 16px;
+
+        }
+        .exp_view {
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+        }
+        .exp_count {
+            font-size: 48px;
+
+        }
+        .exp_view p {
+            width: 60px;
+            margin-left: 10px;
+        }
+        .happyview {
+            display: flex;
+            margin-left: 40px;
+            align-items: center;
+        }
+        .happyview p {
+            width: 60px;
+            margin-left: 10px;
+        }
+        .portfolio {
+            color: pink
+        }
+        .section2 {
+            margin-left: 24px;
+        }
+        .grid1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            justify-self: flex-end;
+            gap: 10px;
+        }
+        .box {
+            height: 360px;
+            width: 600px;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+        }
+        .banner {
+            height: 300px;
+            width: 600px;
+            border-radius: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav_heading">
+                <h1>Almeida</h1>
+            </div>
+            <div class="nav_links">
+                <a href="">Home</a>
+                <a href="">Portfolio</a>
+                <a href="">Skills</a>
+                <a href="">Training</a>
+                <a href="">News</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section_container">
+            <div style="margin-left: 24px;">
+                <h1 class="name">Yunus Almedia</h1>
+                <h1 class="sub_title">Creative design based in Indonesia</h1>
+                <div class="cat_list">
+                    <p>Web Development</p>
+                    <p>Mobile Development</p>
+                    <p>Graphic Designer</p>
+                </div>
+                
+                <div class="exp_view">
+                    <h1 class="exp_count">10+</h1>
+                    <p>Years of Experience</p>
+                    <div class="happyview">
+                        <h1 class="exp_count">10+</h1>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dev_img_container">
+                <img src="../assets/images/developer.jpg" class="dev_img" alt="">
+            </div>
+
+        </div>
+
+        <div class="section2">
+
+            <p class="portfolio">Portfolio</p>
+            <h1>SELECTED WORKS</h1>
+
+            <div class="grid1">
+                <div class="box1 box">
+                    <img src="../assets/images/banner1.webp" class="banner" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem, ipsum.</p>
+                </div>
+                <div class="box2 box">
+                    <img src="../assets/images/banner2.webp" class="banner" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem, ipsum.</p>
+                </div>
+                <div class="box3 box">
+                    <img src="../assets/images/banner3.webp" class="banner" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem, ipsum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
