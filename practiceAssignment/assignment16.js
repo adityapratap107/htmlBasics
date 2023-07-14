@@ -10,14 +10,15 @@ filter.addEventListener('keyup', filterItems)
 function filterItems(e) {
     // convert to lowercase
     let text = e.target.value.toLowerCase();
+    // console.log(text)
     let items = listItems.getElementsByTagName('li');  // returns the html list
-    console.log(items);
+    // console.log(items);
     // convert htmllist to an array
-    console.log('Array_item', Array.from(items))
+    // console.log('Array_item', Array.from(items))
     Array.from(items).forEach(function(item) {
-        console.log('item', item)
+        // console.log('item', item)
         let itemName = item.firstChild.textContent;
-        console.log('itemName', itemName);
+        console.log('itemName:', itemName);
         if(itemName.toLowerCase().indexOf(text) != -1) {
             item.style.display='flex';
             item.style.display='space-between';
@@ -28,17 +29,18 @@ function filterItems(e) {
 }
 
 function onDeletePress(e) {
+    console.log('delete_event:', e)
     if(e.target.classList.contains('delete')) {
         if(confirm("Are you sure?")) {
             let li = e.target.parentElement;
             listItems.removeChild(li);
         }
-        console.log(1)
+        console.log(1)  
     }
 }
 
 function onSubmitPress() {
-    console.log(inputVal.value)
+    console.log('input value:', inputVal.value)
     let li = document.createElement('li');
     li.className = 'line';
     li.id = "list";
