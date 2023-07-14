@@ -21,7 +21,7 @@ function filterItems(e) {
         console.log('itemName:', itemName);
         if(itemName.toLowerCase().indexOf(text) != -1) {
             item.style.display='flex';
-            item.style.display='space-between';
+            item.style.display='space-between'; 
         } else {
             item.style.display ='none';
         }
