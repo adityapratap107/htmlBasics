@@ -31,6 +31,28 @@
 // console.log(age)
 
 
-const sum = (num1, num2) => num1 + num2;
+// const sum = (num1, num2) => num1 + num2;
 
-console.log(sum(2,3));
+// console.log(sum(2,3));
+
+
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+console.log(numbersCombined)
+
+
+const myVehicle = {
+    brand: 'Ford',
+    model: 'Mustang',
+    color: 'red'
+  }
+  
+  const updateMyVehicle = {
+    type: 'car',
+    year: 2021, 
+    color: 'yellow'
+  }
+
+  const updateVehicle = {...myVehicle, ...updateMyVehicle}
+  console.log(updateVehicle)

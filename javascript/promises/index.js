@@ -1,16 +1,17 @@
 const cart = ["Shoes", "Pants", "Tshirts"];
+
 // createOrder(cart, function(orderId) {
 //     proceedToPayment(orderId);
 // })
-
 // const promise  = createOrder(cart);
+// console.log(promise)
 // promise.then(function(orderId) {
 //     proceedToPayment(orderId);
 // }) 
 
 
 // const getData = fetch('https://jsonplaceholder.typicode.com/todos')
-// // console.log(getData)
+// console.log(getData)
 // getData.then(response => console.log(response.json()))
 
 
@@ -18,7 +19,8 @@ const cart = ["Shoes", "Pants", "Tshirts"];
 // createOrder(cart)
 // .then(function (orderid) {
 //     return proceedToPayment(orderid)
-// }).then(function (paymentInfo) {
+// })
+// .then(function (paymentInfo) {
 //     return showOrderSummary();
 // }).then(function (price) {
 //     return updateWallet();
@@ -94,6 +96,9 @@ const cart = ["Shoes", "Pants", "Tshirts"];
 .catch(err => {
     console.log(err.message)
 })
+
+
+
 
 
 // producer

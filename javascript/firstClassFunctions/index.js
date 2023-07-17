@@ -34,7 +34,7 @@
 // let d = function abc() {
 //     console.log('abc called!!')
 // }
-// abc()
+// abc();
 
 // access inside abc declaration
 // let d = function abc() {
@@ -69,13 +69,13 @@
 // y(named)
 
 // return a function from a function
-let y = function (param) {
-    return param;
-}
+    // let y = function (param) {
+    //     return param;
+    // }
 
-function named() {
-    console.log('named function')
-}
+    // function named() {
+    //     console.log('named function')
+    // }
 
-const yVal = y(named);
-console.log(yVal)
+    // const yVal = y(named);
+    // console.log(yVal)
