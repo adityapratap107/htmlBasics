@@ -6,7 +6,7 @@ function addTask() {
         alert("You must write something!");
     } else {
         let li = document.createElement("li");
-        li.innerHTML ='<i class="fa-regular fa-circle" style="color: rgb(216, 78, 9);"></i>' +  inputBox.value;
+        li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";

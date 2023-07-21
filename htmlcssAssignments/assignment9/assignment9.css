@@ -65,24 +65,28 @@ ul li {
 }
 ul li::before {
     content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url('../../assets/images/radio_uncheck.png');
+    background-size: cover;
+    top: 8px;
+    left: 16px;
 }
 ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
-.fa-regular {
-    margin-right: 10px;
+ul li.checked::before {
+    background-image: url('../../assets/images/radio_check.png');
+
 }
+
 .innerText {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
 }
-.fa-xmark {
-    margin-right: 20px;
-
-}
-
 ul li span {
     position: absolute;
     right: 0;

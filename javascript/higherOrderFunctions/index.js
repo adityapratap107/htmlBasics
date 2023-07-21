@@ -75,23 +75,23 @@ const diameter = function (radius) {
 
 // Now if we want to show our calculate function like map in suggestion
 // calculate will availablke on all arrays you see
-// Array.prototype.calculate = function (radiusArr, logic) {
-//     const output = [];
-//     for(let i=0;i<radiusArr.length; i++) {
-//         output.push(logic(radiusArr[i]));
-//     }
-//     return output;
-// }
-
-// console.log(radius.calculate(radius, area))
-
-
-Array.prototype.calculate = function (logic) {
+Array.prototype.calculate = function (radiusArr, logic) {
     const output = [];
-    for(let i=0;i<this.length; i++) {
-        output.push(logic(this[i]));
+    for(let i=0;i<radiusArr.length; i++) {
+        output.push(logic(radiusArr[i]));
     }
     return output;
 }
 
-console.log(radius.calculate(area))
+console.log(radius.calculate(radius, area))
+
+
+// Array.prototype.calculate = function (logic) {
+//     const output = [];
+//     for(let i=0;i<this.length; i++) {
+//         output.push(logic(this[i]));
+//     }
+//     return output;
+// }
+
+// console.log(radius.calculate(area));

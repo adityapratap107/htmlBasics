@@ -59,12 +59,12 @@ function makeBurger(pizza) {
 //     console.log('error occured')
 // })
 
-async function orderPizza() {
-    const cheese = await getCheese();
-    console.log('here is the cheese', cheese)
-    const pizza = await makePizza(cheese);
-    console.log('here is the pizza', pizza);
-    const burger = await makeBurger(pizza);
-    console.log('here is the burger', burger)
-}
-orderPizza();
+// async function orderPizza() {
+//     const cheese = await getCheese();
+//     console.log('here is the cheese', cheese)
+//     const pizza = await makePizza(cheese);
+//     console.log('here is the pizza', pizza);
+//     const burger = await makeBurger(pizza);
+//     console.log('here is the burger', burger)
+// }
+// orderPizza();
