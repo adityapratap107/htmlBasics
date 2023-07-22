@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+:root {
+    --grey1:  rgb(54, 49, 49);
+    --grey2:  rgb(42, 57, 69);
+    --yellow: rgb(251, 231, 48);
+    --lightgrey: lightgray
+}
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+header h1 {
+    color: var(--yellow);
+    font-size: 54px;
+}
+header p {
+    color: var(--lightgrey)
+}
+.logo {
+    height: 100px;
+    width: 100px;
+}
+.heading {
+    margin-left: 60px;
+}
+button {
+    margin-top: 20px;
+    background-color: var(--grey1);
+    padding: 16px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: none
+}
+button:hover {
+    background-color: var(--yellow);
+    color: black
+}
+.active {
+    background-color: var(--yellow);
+    color: black
+
+}
+#tab-content {
+    height: 400px;
+    background-color: var(--grey2);
+    width: 600px;
+
+}
+
+ul {
+    color: var(--lightgrey);
+    padding: 60px;
+}
+ul li {
+    margin-top: 12px;
+}
