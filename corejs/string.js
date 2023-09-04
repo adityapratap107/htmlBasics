@@ -1,3 +1,3 @@
-const str = "      Hello world";
+const str = "      Hello world     ";
 console.log(str)
 console.log(str.trim());

@@ -1,5 +1,4 @@
 const cart = ["Shoes", "Pants", "Tshirts"];
-
 // createOrder(cart, function(orderId) {
 //     proceedToPayment(orderId);
 // })
@@ -11,7 +10,7 @@ const cart = ["Shoes", "Pants", "Tshirts"];
 
 
 // const getData = fetch('https://jsonplaceholder.typicode.com/todos')
-// console.log(getData)
+// // console.log(getData)
 // getData.then(response => console.log(response.json()))
 
 
@@ -39,9 +38,11 @@ const cart = ["Shoes", "Pants", "Tshirts"];
 
 
 // const promise = createOrder(cart);
-// console.log(promise)
+// console.log('Create Order Promise: ', promise)
+
+
 // promise.then(function (orderId) {
-//     console.log(orderId)
+//     console.log(orderId);
 // }).catch(err => {
 //     console.log('myerror', err)
 // })
@@ -71,8 +72,8 @@ const cart = ["Shoes", "Pants", "Tshirts"];
 // }
 
 // function validateCart(cart) {
-//     // return false;
-//     return true;
+//     return false;
+//     // return true;
 // }
 
 
@@ -96,9 +97,6 @@ const cart = ["Shoes", "Pants", "Tshirts"];
 .catch(err => {
     console.log(err.message)
 })
-
-
-
 
 
 // producer

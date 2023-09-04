@@ -30,6 +30,7 @@ function makePizza(cheese) {
             const pizza =cheese +  "🍕";
             // console.log("Here is the pizza", pizza);
             resolve(pizza)
+            // reject('Not able to make pizza!!')
         },3000)
     })
 }
@@ -59,12 +60,20 @@ function makeBurger(pizza) {
 //     console.log('error occured')
 // })
 
-// async function orderPizza() {
-//     const cheese = await getCheese();
-//     console.log('here is the cheese', cheese)
-//     const pizza = await makePizza(cheese);
-//     console.log('here is the pizza', pizza);
-//     const burger = await makeBurger(pizza);
-//     console.log('here is the burger', burger)
-// }
-// orderPizza();
+async function orderPizza() {
+    try {
+
+    const cheese = await getCheese();
+    console.log('here is the cheese', cheese)
+    const pizza = await makePizza(cheese);
+    console.log('here is the pizza', pizza);
+    const burger = await makeBurger(pizza);
+    console.log('here is the burger', burger)
+    }
+    catch(err) {
+        console.log('err', err)
+    }
+}
+orderPizza();
+
+

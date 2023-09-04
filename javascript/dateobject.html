@@ -7,16 +7,15 @@
     <title>Document</title>
     <script>
         function onDateCall() {
-            let username = prompt("enter your name");
             let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
             let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
+            // 2023-08-06T04:20:59.348Z
             let currDate = new Date()
-            let weekday = currDate.getDay() - 1;
+            let weekday = currDate.getDay() + 6;
             let day = currDate.getDate();
             let month = currDate.getMonth();
             let year = currDate.getFullYear();
-
+            console.log(weekday)
             let today = days[weekday] + " " + day + " " + months[month] + " " + year;
             let mydate = document.getElementById("currdate");
             mydate.innerHTML = today;
@@ -27,7 +26,6 @@
         <!-- Date Object -->
         <div style="text-align: center;">
             <div id="currdate"></div>
-            <div>Hello</div>
         </div>
     
 </body>

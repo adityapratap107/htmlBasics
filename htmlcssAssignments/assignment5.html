@@ -9,19 +9,144 @@
         *{
             padding: 0;
             margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .upper-container{
-            background: linear-gradient(rgba(1,1,1,0.1) 50%, rgb(1,1,1,0.1) 50%), url(../assets/images/setup.jpg);
-            height: 90vh;
+            background: linear-gradient(rgba(1,1,1,0.1) 50%, rgb(1,1,1,0.1) 50%), url(../assets/images/portfolio/backgroundCover.png);
+            height: 80vh;
             background-size: cover;
             background-repeat: no-repeat;
             width: 100%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .heading_title {
+            display: flex;
+            /* align-items: flex-end; */
+            justify-content: flex-end;
+            flex-direction: column;
+            margin-top: 10rem;
+        }
+        .heading_title span {
+            font-size: 68px;
+        }
+        .subheading_1 {
+            margin-left: 10px;
+            color: white;
+            font-size: 32px;
+
+
+        }
+        .subheading_2 {
+            color: white;
+            font-size: 70px;
+        }
+        .section1 {
+            background-color: black;
+            color: white;
+            height: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section1 h1 {
+            margin-left: 10px;
+            font-size: 64px;
+        }
+        .section2 {
+            height: 34rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        .box {
+            height: 24rem;
+            width: 20rem;
+            margin-top: 120px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+        }
+        .box .heading {
+            font-weight: bold;
+        }
+        .section3 {
+            height: 30rem;
+            display: flex;
+
+        }
+        .sub_section_1 {
+            background-color: #515603;
+            height: 30rem;
+            width: 50%;
+            color: white;
+        }
+        .inner_section_container {
+            margin-left: 120px;
+        }
+        .main_heading{
+            margin-top: 40px;
+            font-size: 50px;
+        }
+        .heading_section {
+            width: 30rem;
+        }
+        .sub_section_2 {
+            background-color: #722300;
+            height: 30rem;
+            width: 50%;
+            color: white;
+
         }
     </style>
 </head>
 <body>
     <div class="upper-container">
-
+        <div class="heading_title">
+            <p class="subheading_1"><span>Hi, </span>I am John Doe</p>
+            <p class="subheading_2">FULL STACK DEVELOPER</p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2>WORK , I CAN DO FOR <h1>YOU</h1></h2>
+    </div>
+    <div class="section2">
+        <div class="box box1">
+            <img src="../assets/images/portfolio/box1.png" height="200px" width="100%" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.
+            </p>
+        </div>
+        <div class="box box2">
+            <img src="../assets/images/portfolio/box2.png" height="200px" width="100%" alt="">
+            <p class="heading">APP Development</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+        </div>
+        <div class="box box3">
+            <img src="../assets/images/portfolio/box3.png" height="200px" width="100%" alt="">
+            <p class="heading">UI / UX Design</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="sub_section_1">
+            <div class="inner_section_container">
+                <h1 class="main_heading">Contact Me</h1>
+                <p class="heading_section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde USvoluptas obcaecati unde US</p>
+                <p>dosomecoding@example.test</p>
+            </div>
+        </div>
+        <div class="sub_section_2">
+            <div class="inner_section_container">
+                <h1 class="main_heading">About Me</h1>
+                <p class="heading_section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde USvoluptas obcaecati unde US</p>
+                <p class="heading_section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde USvoluptas obcaecati unde US</p>
+                <p>dosomecoding@example.test</p>
+            </div>
+        </div>
+    </div>
+    <div class="section1">
+        <h2>PROJECT BY DO SOME CODING</h2>
     </div>
 </body>
 </html>

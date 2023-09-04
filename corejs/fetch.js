@@ -5,7 +5,8 @@
 
 const abc = () => {
       const getData = fetch('https://jsonplaceholder.typicode.com/todos');
-      console.log(getData);
+      // console.log(getData);
+      getData.then(res => console.log(res))
 }
 abc();
 

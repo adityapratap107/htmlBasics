@@ -1,6 +1,7 @@
 // console.log(document.getElementsByClassName(".item"))
 // const ul = document.querySelector('.items');
-// ul.remove(); 
+// console.log(ul)
+// ul.remove();
 
 // const header = document.querySelector(".header");
 // header.style.borderBottom = '2px solid black'
@@ -19,7 +20,7 @@
 
 // returns nodelist
 // const allList = document.querySelectorAll('.items');
-// console.log('allList', allList)
+// console.log('allList', allList[0])
 // allList[0].style.backgroundColor = 'green';
 
 // // style only odd elements
@@ -36,8 +37,8 @@
 
 
 const itemlist = document.querySelector('.items');
-
-// itemlist.parentNode.style.backgroundColor = 'red';
+console.log(itemlist)
+itemlist.parentNode.style.backgroundColor = 'red';
 
 // // if we want to access parent - parent node
 // itemlist.parentNode.parentNode.style.backgroundColor = 'red';
@@ -55,6 +56,7 @@ const itemlist = document.querySelector('.items');
 // itemlist.firstElementChild.textContent = "hiii"
 
 // // last element child
+// console.log(itemlist.lastElementChild)
 // itemlist.lastElementChild.textContent= "hello"
 
 // console.log(itemlist.firstChild)
@@ -71,24 +73,25 @@ const itemlist = document.querySelector('.items');
 
 // // create elements
 const newDiv = document.createElement('div');
-
-// // // Add class
+// console.log(newDiv)
+// // // // Add class
 newDiv.className = "hello_div";
 
-// // // add id
+// // // // add id
 newDiv.id = "hello_id"
 
-// // // set attribute
+// // // // set attribute
 newDiv.setAttribute('title', 'This is title of div');
 // console.log(newDiv)
 
-// // // appendChild
+// // // // appendChild
 let newdivtext = document.createTextNode("hello world");
+// console.log(newdivtext)
 newDiv.appendChild(newdivtext)
 
 
 let header = document.querySelector("header .header");
-console.log(header)
+// console.log(header)
 let h1 = document.querySelector(".header h1");
 
 header.insertBefore(newDiv, h1)

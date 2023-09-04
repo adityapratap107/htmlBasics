@@ -79,7 +79,8 @@ let multiply = function (x) {
 }
 
 let multiplyByTwo = multiply(2);
-multiplyByTwo(3);
+// console.log(multiplyByTwo)
+// multiplyByTwo(3);
 
 let multiplyByThree = multiply(4);
 multiplyByThree(3);
